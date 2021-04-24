@@ -87,7 +87,7 @@ p{
 
 .nav{
     background: white;
-    padding: 0 4rem;
+    padding: 0 2rem;
     height: 0rem;
     min-height: 9vh;
     overflow: hidden;
@@ -135,20 +135,22 @@ p{
     font-size: 1.1rem;
 }
 
-.nav .nav-items .nav-link:hover{
-    background-color: var(--midnight);
-}
-
 .nav .nav-items .nav-link:hover a{
+    cursor: pointer;    
     color:  #a1c4cf;
 }
-
 .nav .nav-brand a{
     font-size: 1.6rem;
-    padding: 1rem 0;
+    padding: 1.3rem 0;
     display: block;
     font-family: var(--Lexend);
     font-size: 1.6rem;
+    width: 80px;
+}
+
+.nav .nav-brand:hover a{
+    cursor: pointer;    
+    color: #a1c4cf;
 }
 
 .nav .social{
@@ -205,11 +207,15 @@ main .site-title-contact{
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid var(--text-gray);
-    color: var(--text-gray);
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
     font-size: 15px;
     margin-bottom: 16px;
     font-family: var(--Livvic);
+}
+
+::placeholder{
+    color: var(--white);
 }
 
 .form-control-message{
@@ -218,8 +224,8 @@ main .site-title-contact{
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid var(--text-gray);
-    color: var(--text-gray);
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
     font-size: 15px;
     margin-bottom: 16px;
     font-family: var(--Livvic);
@@ -270,7 +276,7 @@ main .blog-post .blog-content{
 }
 
 main .blog-content .blog-title{
-    padding: 2rem 0;
+    padding: 1rem;
 }
 
 main .blog-content .btn-blog{
@@ -363,7 +369,7 @@ footer.footer{
 
 footer.footer .container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 footer.footer .container > div{
@@ -389,21 +395,35 @@ footer.footer .rights{
 
 
 /* -------------- Widok dla >750px -------------- */
-
 @media only screen and (max-width: 750px){
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
     }
 
     .nav .toggle-collapse{
-        display: initial;        
-        width: 80%;
+        display: block;
+        width: 24px;
+        margin-left: 80%;
     }
 
     footer.footer .container{
         grid-template-columns: repeat(1, 1fr);
     }
+    
+    .form-control{
+        width: 300px;
+        border-bottom: 1px solid var(--white);
+        color: var(--white);
+    }
 
-/* ------x-------- Widok dla >750px --------x------ */
+    .form-control-message{
+        width: 300px;
+        border-bottom: 1px solid var(--white);
+        color: var(--white);
+    }
+    
+    .submit{
+        border-color: transparent;
+    }
 }
-
+/* ------x-------- Widok dla >750px --------x------ */

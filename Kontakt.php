@@ -48,26 +48,32 @@ if(isset($_POST['submit'])){
             <div class="nav-brand">
                 <a href="Index.php" class="text-gray">TRAIL</a>
             </div>
+            
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
             <div>
-                <ul class="nav-items">
+            <ul class="nav-items">
                     <li class="nav-link">
-                        <a href="#">Rowery</a>
+                        <a href="bikes.php">Rowery</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Odzież kolarska</a>
+                        <a href="clothes.php">Odzież kolarska</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Wycieczki</a>
+                        <a href="trips.php">Wycieczki</a>
                     </li>
                     <li class="nav-link">
-                        <a href="kontakt.php">Kontakt</a>
+                        <a href="Kontakt.php">Kontakt</a>
                     </li>
                 </ul>
             </div>
             <div class="social text-gray">
                 <a href="https://www.facebook.com/maciek.kuczynski.3"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/kuczyn_07/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.strava.com/athletes/39388761"><i class="fab fa-strava"></i></a>
+                <a href="https://www.strava.com/athletes/kuczyn07"><i class="fab fa-strava"></i></a>
             </div>
         </div>
     </nav>
@@ -111,8 +117,14 @@ if(isset($_POST['submit'])){
                 <div>
                 <a href="https://www.facebook.com/maciek.kuczynski.3"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/kuczyn_07/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.strava.com/athletes/39388761"><i class="fab fa-strava"></i></a>
+                <a href="https://www.strava.com/athletes/kuczyn07"><i class="fab fa-strava"></i></a>
                 </div>
+            </div>
+            <div class="about-us" data-aos="fade-down">
+                <h2>Kontakt:</h2>
+                <p>Maciej Kuczyński</p>
+                <p>888-500-658</p>
+                <p>trail.contact.us@gmail.com</p>
             </div>
         </div>
         <div class="rights flex-row">
@@ -123,6 +135,8 @@ if(isset($_POST['submit'])){
     </footer>
 
     <!-- -------------x------------- STOPKA --------------------x------------------- -->
+
 </body>
+
 
 </html>

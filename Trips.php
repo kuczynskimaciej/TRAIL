@@ -53,7 +53,7 @@
             <div class="social text-gray">
                 <a href="https://www.facebook.com/maciek.kuczynski.3"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/kuczyn_07/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.strava.com/athletes/39388761"><i class="fab fa-strava"></i></a>
+                <a href="https://www.strava.com/athletes/kuczyn07"><i class="fab fa-strava"></i></a>
             </div>
         </div>
     </nav>
@@ -134,8 +134,14 @@
                 <div>
                 <a href="https://www.facebook.com/maciek.kuczynski.3"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/kuczyn_07/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.strava.com/athletes/39388761"><i class="fab fa-strava"></i></a>
+                <a href="https://www.strava.com/athletes/kuczyn07"><i class="fab fa-strava"></i></a>
                 </div>
+            </div>
+            <div class="about-us" data-aos="fade-down">
+                <h2>Kontakt:</h2>
+                <p>Maciej Kuczyński</p>
+                <p>888-500-658</p>
+                <p>trail.contact.us@gmail.com</p>
             </div>
         </div>
         <div class="rights flex-row">
