@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TRAIL</title>
+
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/Style.css">
+
+    <script src="./js/Jquery3.4.1.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- ----------------------------  PASEK NAWIGACJI ---------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="Index.php" class="text-gray">TRAIL</a>
+            </div>
+            
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+            <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="bikes.php">Rowery</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="clothes.php">Odzież kolarska</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="trips.php">Wycieczki</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="Kontakt.php">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="https://www.facebook.com/maciek.kuczynski.3"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/kuczyn_07/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.strava.com/athletes/39388761"><i class="fab fa-strava"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------x---------------  PASEK NAWIGACJI --------------------------x------------------- -->
+
+    <!----------------------------- SEKCJA GŁÓWNA ------------------------------>
+
+    <main>
+
+        <!------------------------ TYTUŁ ---------------------->
+
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+                <h1>Rower? Kolarstwo? Wycieczki?</h1>
+            </div>
+        </section>
+
+        <!------------x----------- TYTUŁ ----------x----------->
+
+        <!-- --------------------- KARUZELA ----------------- -->
+
+        <section>
+            <div class="blog">
+                <div class="container">
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/Blog-post/post-1.png" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Nowy Kross Earth</h3>
+                                <a href="bikes.php" class="btn btn-blog">Rowery</a>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                            <img src="./assets/Blog-post/post-3.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Góry Sowie? Czemu nie!</h3>
+                                <a href="trips.php" class="btn btn-blog">Wycieczki</a>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
+                            <img src="./assets/Blog-post/post-2.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Kask? A po co to komu...</h3>
+                                <a href="clothes.php" class="btn btn-blog">Odzież kolarska</a>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                            <img src="./assets/Blog-post/post-4.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Dlaczego powinnismy odwiedzic Swieradów Zdroj</h3>
+                                <a href="trips.php" class="btn btn-blog">Wycieczki</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------x---------- KARUZELA --------x-------- -->
+
+    </main>
+
+    <!---------------x------------- SEKCJA GŁÓWNA ---------------x-------------->
+
+
+    <!-- --------------------------- STOPKA ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-down">
+                <h2>O mnie</h2>
+                <p>Maciej Kuczyński, zaocznie student informatyki, codziennie fan kolarstwa oraz wyścigów XC.</p>
+            </div>
+            <div class="follow" data-aos="fade-down">
+                <h2>Obserwuj mnie</h2>
+                <div>
+                <a href="https://www.facebook.com/maciek.kuczynski.3"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/kuczyn_07/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.strava.com/athletes/39388761"><i class="fab fa-strava"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Maciej Kuczyński 6754
+            </h4>
+        </div>
+    </footer>
+
+    <!-- -------------x------------- STOPKA --------------------x------------------- -->
+
+</body>
+
+
+</html>
