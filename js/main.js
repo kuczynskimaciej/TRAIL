@@ -18,12 +18,10 @@ $(document).ready(function () {
     $nav = $('.nav');
     $toggleCollapse = $('.toggle-collapse');
 
-    /** click event on toggle menu */
     $toggleCollapse.click(function () {
         $nav.toggleClass('collapse');
     })
-
-    // owl-crousel for blog
+    
     $('.owl-carousel').owlCarousel({
         loop: true,
         autoplay: true,
@@ -33,8 +31,7 @@ $(document).ready(function () {
         navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
         responsive: responsive
     });
-
-    // AOS Instance
+    
     AOS.init();
 
 });

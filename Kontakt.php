@@ -46,7 +46,7 @@ if(isset($_POST['submit'])){
     <nav class="nav">
         <div class="nav-menu flex-row">
             <div class="nav-brand">
-                <a href="Index.php" class="text-gray">TRAIL</a>
+                <a href="Index.html" class="text-gray">TRAIL</a>
             </div>
             
             <div class="toggle-collapse">
@@ -57,13 +57,13 @@ if(isset($_POST['submit'])){
             <div>
             <ul class="nav-items">
                     <li class="nav-link">
-                        <a href="bikes.php">Rowery</a>
+                        <a href="bikes.html">Rowery</a>
                     </li>
                     <li class="nav-link">
-                        <a href="clothes.php">Odzież kolarska</a>
+                        <a href="clothes.html">Odzież kolarska</a>
                     </li>
                     <li class="nav-link">
-                        <a href="trips.php">Wycieczki</a>
+                        <a href="trips.html">Wycieczki</a>
                     </li>
                     <li class="nav-link">
                         <a href="Kontakt.php">Kontakt</a>
