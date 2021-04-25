@@ -1,19 +1,29 @@
 <?php 
 if(isset($_POST['submit'])){
+    try{
     $to = "trail.contact.us@gmail.com";
     $from = $_POST['email']; 
     $name = $_POST['name'];
+    $phoneNumber = $_POST['phonenumber'];
     $subject = "Serwis TRAIL formularz kontaktowy";
-    $message =  "Imię:   $name\n".
-                "Email:   $from\n\n".
-                "Tresc wiadomosci: \n\n".
-                $_POST['message'];
-
-    $headers = "From:" . $from;
-    mail($to,$subject,$message,$headers);
-
-    $popup = "Wiadomość została wysłana!";
-    echo "<script type='text/javascript'>alert('$popup');</script>";
+    if(empty($phoneNumber)){
+        $message =  "Imię:   $name\n".
+        "Email:   $from\n".
+        "Tresc wiadomosci: \n\n".
+        $_POST['message'];
+    }else{
+        $message =  "Imię:   $name\n".
+        "Email:   $from\n".
+        "Numer telefonu:    $phoneNumber\n\n".
+        "Tresc wiadomosci: \n\n".
+        $_POST['message'];
+    }
+    
+    mail($to,$subject,$message);
+    echo "<script type='text/javascript'>alert('Wiadomość została wysłana!');</script>";
+    }catch (Exception $e)  {     
+    echo "<script type='text/javascript'>alert('Wiadomość nie została wysłana!');</script>";
+    }    
 }
 ?>
 
@@ -89,13 +99,19 @@ if(isset($_POST['submit'])){
             <div>
                 <br><br><br><br><br><br><br>
                 <form id="contact—form" method="post" action="">
-                    <input name="name" type="text" class="form-control" placeholder="Twoje imię" required>
+                    <input name="name" type="text" class="form-control" placeholder="Twoje imię*" required>
                     <br>
-                    <input name="email" type="email" class="form-control" placeholder="Twój Email" required>
+                    <input name="email" type="email" class="form-control" placeholder="Twój Email*" required>
                     <br>
-                    <textarea name="message" class="form-control-message" placeholder="Wiadomość" row="5" required></textarea>
+                    <input name="phonenumber" type="phone" class="form-control" placeholder="Numer Telefonu">
                     <br>
-                    <input type="submit" name="submit" class="form-control submit" value="Wyślij">
+                    <textarea name="message" class="form-control-message" placeholder="Wiadomość*" row="5" required></textarea>                    
+                    <br>
+                    <label> * pola obowiązkowe</label>
+                    <br><br>
+                    <input type="checkbox" class="checkboxcontact" onchange="document.getElementById('submit').disabled = !this.checked;" required/><label> Nie jestem robotem</label>
+                    <br>
+                    <input type="submit" name="submit" id="sbmit" class="form-control submit" value="Wyślij">
                 </form>
             </div>
         </section>

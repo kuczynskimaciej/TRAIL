@@ -219,8 +219,8 @@ main .site-title-contact{
 }
 
 .form-control-message{
-    width: 600px;
-    height: 200px;
+    min-width: 600px;
+    min-height: 200px;
     background: transparent;
     border: none;
     outline: none;
@@ -229,16 +229,19 @@ main .site-title-contact{
     font-size: 15px;
     margin-bottom: 16px;
     font-family: var(--Livvic);
+    max-height: 400px;
+    max-width: 600px;
 }
 
-input{
-    height: 45px;
+label {
+    color:var(--white);
+    font-family: var(--Livvic);
 }
 
 .submit{
     background: #3f4954;
     border-color: transparent;
-    color: white;
+    color: var(--white);
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -417,7 +420,7 @@ footer.footer .rights{
     }
 
     .form-control-message{
-        width: 300px;
+        min-width: 300px;
         border-bottom: 1px solid var(--white);
         color: var(--white);
     }
