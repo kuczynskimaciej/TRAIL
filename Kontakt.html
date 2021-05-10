@@ -1,32 +1,3 @@
-<?php 
-if(isset($_POST['submit'])){
-    try{
-    $to = "trail.contact.us@gmail.com";
-    $from = $_POST['email']; 
-    $name = $_POST['name'];
-    $phoneNumber = $_POST['phonenumber'];
-    $subject = "Serwis TRAIL formularz kontaktowy";
-    if(empty($phoneNumber)){
-        $message =  "Imię:   $name\n".
-        "Email:   $from\n".
-        "Tresc wiadomosci: \n\n".
-        $_POST['message'];
-    }else{
-        $message =  "Imię:   $name\n".
-        "Email:   $from\n".
-        "Numer telefonu:    $phoneNumber\n\n".
-        "Tresc wiadomosci: \n\n".
-        $_POST['message'];
-    }
-    
-    mail($to,$subject,$message);
-    echo "<script type='text/javascript'>alert('Wiadomość została wysłana!');</script>";
-    }catch (Exception $e)  {     
-    echo "<script type='text/javascript'>alert('Wiadomość nie została wysłana!');</script>";
-    }    
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,7 +47,7 @@ if(isset($_POST['submit'])){
                         <a href="trips.html">Wycieczki</a>
                     </li>
                     <li class="nav-link">
-                        <a href="Kontakt.php">Kontakt</a>
+                        <a href="Kontakt.html">Kontakt</a>
                     </li>
                 </ul>
             </div>
@@ -98,17 +69,34 @@ if(isset($_POST['submit'])){
         <section class="site-title-contact">
             <div>
                 <br><br><br><br><br><br><br>
-                <form id="contact—form" method="post" action="">
-                    <input name="name" type="text" class="form-control" placeholder="Twoje imię*" required>
+                <form id="contact—form" method="post" action="post.php">
+                    <input name="name" type="text" class="form-control" placeholder="Twoje imię*" required>                   
                     <br>
                     <input name="email" type="email" class="form-control" placeholder="Twój Email*" required>
                     <br>
                     <input name="phonenumber" type="phone" class="form-control" placeholder="Numer Telefonu">
                     <br>
+                        <div class="form-control">
+                            <label>Powód kontaktu:</label>
+                            <select name="reason">
+                                <option value="Rower">Rower</option>
+                                <option value="Odzież kolarska">Odzież kolarska</option>
+                                <option value="Wycieczki">Wycieczki</option>
+                                <option value="Inne">Inne</option>
+                            </select>
+                        </div>
+                    <br>
                     <textarea name="message" class="form-control-message" placeholder="Wiadomość*" row="5" required></textarea>                    
                     <br>
                     <label> * pola obowiązkowe</label>
-                    <br><br>
+                    <br>
+                    <br>
+                        <div class="form-control">                        
+                            <label>Preferowana forma kontaktu:</lebel>
+                            <input type="radio" name="contactForm" value="Email" checked><label>Email</label>
+                            <input type="radio" name="contactForm" value="Telefon"><label>Telefon</label>
+                        </div>
+                    <br>
                     <input type="checkbox" class="checkboxcontact" onchange="document.getElementById('submit').disabled = !this.checked;" required/><label> Nie jestem robotem</label>
                     <br>
                     <input type="submit" name="submit" id="sbmit" class="form-control submit" value="Wyślij">
