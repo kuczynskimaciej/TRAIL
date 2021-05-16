@@ -10,7 +10,7 @@ html, body{
 
     /*      Koloty       */
     --text-gray: #3f4954;
-    --text-light : #686666da;
+    --text-light : rgba(104, 102, 102, 0.855);
     --bg-color: #0f0f0f;
     --white: #ffffff;
     --midnight: #104f55;
@@ -191,6 +191,98 @@ main .site-title h1{
 
 /* --------x------ Tytuł --------x------- */
 
+/* -------------- Rozmiar --------------- */
+main .site-title-size{
+    background: url('../assets/Background-image-size.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title-size .site-title-size-title label{
+    font-family: var(--Livvic);
+    color:#0f0f0f;
+    font-size: x-large;
+}
+
+main .site-title-size .site-title-size-table table{
+    border:1px #0f0f0f;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 10%;
+}
+
+main .site-title-size .site-title-size-table th, tr{    
+    font-family: var(--Livvic);
+}
+
+main .site-title-size .site-title-size-table th{
+    height: 5vh;
+    width: 200px;
+    min-width: 170px;   
+    font-size: x-large;     
+    font-weight: lighter;
+}
+
+main .site-title-size .site-title-size-table tr{
+    height: 3vh;    
+    color:black;
+    background-color: rgba(104, 102, 102, 0.01); 
+}
+
+main .site-title-size .site-title-size-table tr:nth-child(even) {
+    background-color: rgba(104, 102, 102, 0.9);    
+    color:white;
+    
+}
+
+main .site-title-size .site-title-calculator{
+    margin-left: 9%;
+    margin-top: 20px;
+}
+
+main .site-title-size .site-title-calculator label{
+    color:#0f0f0f;
+    font-family: var(--Livvic);
+    font-size: large;
+}
+
+main .site-title-size .site-title-calculator input[type=number]{
+    width: 380px;
+}
+
+main .site-title-size .site-title-calculator .calculator-submit{
+    background: rgba(104, 102, 102, 0.5);
+    border-color: transparent;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    font-family: var(--Livvic);    
+    border-radius: 2rem;
+    margin-left: 34%;
+}
+
+main .site-title-size .site-title-calculator .calculator-submit:hover{
+    background-color:  rgba(104, 102, 102, 0.8);
+    cursor: pointer;    
+    color: var(--white);
+}
+
+main .site-title-size .site-title-calculator .site-title-calculator-result{
+    color:white;
+    font-size: xx-large;
+    font-stretch: expanded;
+    background-color: rgba(104, 102, 102, 0.5);
+}
+
+
+/* -------x------ Rozmiar -------x------- */
+
 /* -------------- Kontakt --------------- */
 
 main .site-title-contact{
@@ -200,7 +292,6 @@ main .site-title-contact{
     display: flex;
     justify-content: center;
 }
-
 
 .form-control{
     width: 600px;

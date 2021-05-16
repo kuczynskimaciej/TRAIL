@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TRAIL</title>
+
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/Style.css">
+
+    <script src="./js/Jquery3.4.1.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/main.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ----------------------------  PASEK NAWIGACJI ---------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="Index.html" class="text-gray">TRAIL</a>
+            </div>
+            
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+            <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="bikes.html">Rowery</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="clothes.html">Odzież kolarska</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="trips.html">Wycieczki</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="size.html">Rozmiar</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="Kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="https://www.facebook.com/maciek.kuczynski.3"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/kuczyn_07/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.strava.com/athletes/kuczyn07"><i class="fab fa-strava"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------x---------------  PASEK NAWIGACJI --------------------------x------------------- -->
+
+    <!----------------------------- SEKCJA GŁÓWNA ------------------------------>
+        <main>
+
+        <!------------------------ ROZMIAR ---------------------->
+
+        <div class="site-title-size">
+             
+                <div class="site-title-size-table">
+                        <br>
+                        <br>
+                            <div class="site-title-size-title" data-aos="fade-down">
+                                <label>Oblicz rozmiar idealnej dla Ciebie ramy!</label>
+                            </div>
+                        <br>
+                        <br>
+                    <table>
+                        <tr>
+                            <th data-aos="fade-right">Wzrost</th> 
+                            <th data-aos="fade-left">Rozmiar ramy</th>
+                        </tr>
+                        <tr>
+                            <td data-aos="fade-right">150-155 cm</td> 
+                            <td data-aos="fade-left">33-36 cm (13"-14")</td>
+                        </tr>
+                        <tr>
+                            <td data-aos="fade-right">155-160 cm</td> 
+                            <td data-aos="fade-left">35-38 cm (14"-15")</td>
+                        </tr>
+                        <tr>
+                            <td data-aos="fade-right">160-165 cm</td> 
+                            <td data-aos="fade-left">38-40 cm (15"-16")</td>
+                        </tr>
+                        <tr>
+                            <td data-aos="fade-right">165-170 cm</td> 
+                            <td data-aos="fade-left">40-43 cm (16"-17")</td>
+                        </tr>
+                        <tr>
+                            <td data-aos="fade-right">170-175 cm</td> 
+                            <td data-aos="fade-left">42-48 cm (16,5"-17,5")</td>
+                        </tr>
+                        <tr>
+                            <td data-aos="fade-right">175-180 cm</td> 
+                            <td data-aos="fade-left">44-47 cm (17,5"-18,5")</td>
+                        </tr>
+                        <tr>
+                            <td data-aos="fade-right">180-185 cm</td> 
+                            <td data-aos="fade-left">46-49 cm (18"-19")</td>
+                        </tr>
+                        <tr>
+                            <td data-aos="fade-right">185-190 cm</td> 
+                            <td data-aos="fade-left">46-49 cm (19"-20,5")</td>
+                        </tr>
+                        <tr>
+                            <td data-aos="fade-right">190-195 cm</td> 
+                            <td data-aos="fade-left">51-56 cm (20,5"-22")</td>
+                        </tr>
+                        <tr>
+                            <td data-aos="fade-right">od 195 cm</td> 
+                            <td data-aos="fade-left">od 56 cm (od 22")</td>
+                        </tr>
+                    </table>
+                    <form id="size-form">
+                        <div class="site-title-calculator">
+                            <label>Podaj przekrok [cm]:</label><br>
+                            <input type="number" id="calculator-step" min="33" max="70"><br>
+                            <input type="button" onClick="calc()" class="calculator-submit" value="Oblicz">
+                            <div>
+                                <label>Twój rozmiar ramy [cm]:</label>
+                                <div id="frameSizeCm" class=site-title-calculator-result>0.0</div>
+                                <label>Twój rozmiar ramy [cale]:</label>                            
+                                <div id="frameSizeInch" class=site-title-calculator-result>0.0</div>     
+                            </div>                       
+                        </div>
+                    </form>
+                                       
+            </div>            
+        </div>
+        
+        <!------------x----------- ROZMIAR ----------x----------->
+
+        <!-- --------------------- KARUZELA ----------------- -->
+
+    <!-- --------------------------- STOPKA ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-down">
+                <h2>O mnie</h2>
+                <p>Maciej Kuczyński, zaocznie student informatyki, codziennie fan kolarstwa oraz wyścigów XC.</p>
+            </div>
+            <div class="follow" data-aos="fade-down">
+                <h2>Obserwuj mnie</h2>
+                <div>
+                <a href="https://www.facebook.com/maciek.kuczynski.3"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/kuczyn_07/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.strava.com/athletes/kuczyn07"><i class="fab fa-strava"></i></a>
+                </div>
+            </div>
+            <div class="about-us" data-aos="fade-down">
+                <h2>Kontakt:</h2>
+                <p>Maciej Kuczyński</p>
+                <p>888-500-658</p>
+                <p>trail.contact.us@gmail.com</p>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Maciej Kuczyński 6754
+            </h4>
+        </div>
+    </footer>
+
+    <!-- -------------x------------- STOPKA --------------------x------------------- -->
+
+</body>
+
+<script>
+    function calc(){
+    var step=document.getElementById('calculator-step').value;
+    var frameSizeCm=step*0.6;
+    var frameSizeInch=step*0.238;
+    document.getElementById('frameSizeCm').innerHTML=Math.round(frameSizeCm);
+    document.getElementById('frameSizeInch').innerHTML=Math.round(frameSizeInch);
+    return false
+    }
+</script>
+
+</html>
